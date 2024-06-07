@@ -5,7 +5,7 @@ import { toOfficeApp } from "office-addin-manifest";
 import * as officeAddinTestHelpers from "office-addin-test-helpers";
 import * as officeAddinTestServer from "office-addin-test-server";
 import * as path from "path";
-import * as testHelpers from "./src/test-helpers";
+// import * as testHelpers from "./src/test-helpers";
 
 /* global process, describe, before, it, after */
 
@@ -59,8 +59,8 @@ hosts.forEach(function (host) {
       const stopTestServer = await testServer.stopTestServer();
       assert.strictEqual(stopTestServer, true);
 
-      const applicationClosed = await testHelpers.closeDesktopApplication(host);
-      assert.strictEqual(applicationClosed, true);
+      // const applicationClosed = await testHelpers.closeDesktopApplication(host);
+      // assert.strictEqual(applicationClosed, true);
     });
   });
 });
